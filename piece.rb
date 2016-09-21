@@ -1,22 +1,15 @@
 class Piece
-
-  def initialize
-
+  attr_reader :symbol, :color
+  def initialize(color)
+    @color = color
   end
 
-  def to_s()
-    return "♜"
+  def to_s
+    "#{symbol}"
   end
 
-  def empty?()
-  end
-
-  def symbol()
-  end
-
-  def valid_moves(start_pos)
-    #start_pos is Nullpiece
-    #piece can't move to end_pos
+  def color
+    @color
   end
 
   private
